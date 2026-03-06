@@ -73,6 +73,9 @@
   header {
     @apply bg-white;
   }
+  .headerNav a {
+  @apply font-semibold transition duration-300 hover:text-primary;
+}
   .headerNav ul {
     @apply flex flex-col gap-5 fixed w-full top-26 text-left 
     items-start overflow-hidden right-0 h-0 opacity-0 duration-300
@@ -241,6 +244,12 @@
 
   .eventItemWrap {
     @apply grid grid-cols-3 gap-6 justify-items-center md:px-60;
+  }
+
+  /* contact */
+  input[type="text"],
+  textarea {
+    @apply bg-white rounded-xl px-4 py-3 mt-3 outline-none  focus:ring-primary;
   }
 }
 

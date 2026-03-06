@@ -5,9 +5,10 @@ tabButtons.forEach((button) => {
   button.addEventListener("click", () => {
     clearActiveTabs();
     clearActiveContents();
+
     button.classList.add("active");
 
-    const correspondingContent = document.querySelector('#${button.id}-detail');
+    const correspondingContent = document.querySelector(`#${button.id}-detail`);
     if (correspondingContent) {
       correspondingContent.classList.add("active");
     }
@@ -25,4 +26,3 @@ function clearActiveContents() {
     content.classList.remove("active");
   });
 }
-
